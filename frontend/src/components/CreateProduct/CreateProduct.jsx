@@ -39,7 +39,7 @@ export default function CreateProduct(props) {
 
   useEffect(() => {
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/categories/findAll`
+      `${process.env.REACT_APP_BACK_URL}/api/categories/findAll`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -53,7 +53,7 @@ export default function CreateProduct(props) {
         setIsLoading(true);
       });
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/cities/findAll`
+      `${process.env.REACT_APP_BACK_URL}/api/cities/findAll`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -67,7 +67,7 @@ export default function CreateProduct(props) {
         setIsLoading(true);
       });
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/feature/findAll`
+      `${process.env.REACT_APP_BACK_URL}/api/feature/findAll`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -122,7 +122,7 @@ export default function CreateProduct(props) {
     };
     try {
       const res = await fetch(
-        "http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/product/create",
+        `${process.env.REACT_APP_BACK_URL}/api/product/create`,
         requestOptions
       );
       return res.json();

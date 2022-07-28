@@ -45,7 +45,7 @@ public class UserController {
 
     @PostMapping("/favorite/create/{email}/{productId}")
     public ResponseEntity<String> addFavorite(@PathVariable("email") String email,
-                                              @PathVariable("productId") Integer productId){
+                                              @PathVariable("productId") Integer productId) {
         return new ResponseEntity<>(userService.addFavorite(email, productId), HttpStatus.OK);
     }
 }

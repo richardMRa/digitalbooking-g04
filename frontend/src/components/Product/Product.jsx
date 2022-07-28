@@ -70,7 +70,7 @@ export default function Product(props) {
     if (true) {
       window.scrollTo(0, 0);
       fetch(
-        `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/product/${idProduct}`
+        `${process.env.BACK_URL}/api/product/${idProduct}`
       )
         .then((response) => {
           if (!response.ok) throw Error(response.status);

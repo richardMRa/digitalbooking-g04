@@ -13,7 +13,7 @@ const EditProduct = () => {
     useEffect(() => {
         console.log(arr)
         if (!data) {
-            fetch(`${url.api}/api/product/findAll`)
+            fetch(`${process.env.REACT_APP_BACK_URL}/api/product/findAll`)
                 .then(response => response.json())
                 .then(data => setData(data))
         }

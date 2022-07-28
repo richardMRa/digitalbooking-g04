@@ -7,7 +7,7 @@ import { useRef } from "react";
 //import BloqueListado from "../BloqueListado/BloqueListado";
 
 const Categories = (props) => {
-  const url = URL.api;
+  const url = process.env.REACT_APP_BACK_URL;
   const apiURL = url + "/api/categories/findAll";
 
   const [data, setData] = useState([]);

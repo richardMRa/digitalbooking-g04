@@ -14,7 +14,7 @@ const UserBookings = (props) => {
   useEffect(() => {
     //${props.userData.user.id}
     if (props.userData && !fetchData) {
-      fetch(`${url.api}/api/reservation/findAll/user/${user.id}`)
+      fetch(`${process.env.REACT_APP_BACK_URL}/api/reservation/findAll/user/${user.id}`)
         .then((response) => {
           if (!response.ok) throw Error(response.status);
           return response;

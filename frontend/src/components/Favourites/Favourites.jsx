@@ -16,7 +16,7 @@ export default function Favourites(props) {
   const [click, setClick] = useState(false);
   useEffect(() => {
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/user/favorites/${user.email}`
+      `${process.env.REACT_APP_BACK_URL}/api/user/favorites/${user.email}`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);

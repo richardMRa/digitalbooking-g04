@@ -43,6 +43,7 @@ public class User implements UserDetails{
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "product_id", referencedColumnName = "id")
     )
+
     private Set<Product> favoriteProducts = new HashSet<>();
 
     @Column(name = "verification_code", length = 64)

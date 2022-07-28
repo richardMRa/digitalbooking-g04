@@ -19,7 +19,7 @@ const Searcher = (props) => {
   const refDates = useRef(null);
 
   /*Consumo API*/
-  const url = URL.api;
+  const url = process.env.REACT_APP_BACK_URL;
   const nodoApi = "/api/cities/findAll";
 
   const fetchApiCity = () => {

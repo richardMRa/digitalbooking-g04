@@ -29,7 +29,7 @@
     flex-wrap: nowrap;
     overflow-x: scroll;
     overflow: hidden;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -235,15 +235,12 @@
 /*.image1{
     background-image: url("../../img/categories/hotelesCategory.png");
 }
-
 .image2{
     background-image: url("../../img/categories/hostelsCategory.png");
 }
-
 .image3{
     background-image: url("../../img/categories/departamentosCategory.png");
 }
-
 .image4{
     background-image: url("../../img/categories/bedAndBreakfastCategory.png");
 }*/

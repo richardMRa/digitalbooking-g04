@@ -129,7 +129,7 @@ const CardListado = (props) => {
       redirect: "follow",
     };
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/user/favorite/delete/${user.email}/${data.id}`,
+      `${process.env.REACT_APP_BACK_URL}/api/user/favorite/delete/${user.email}/${data.id}`,
       requestOptions
     )
       .then((response) => response.text())
@@ -152,7 +152,7 @@ const CardListado = (props) => {
       redirect: "follow",
     };
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/user/favorite/create/${user.email}/${data.id}`,
+      `${process.env.REACT_APP_BACK_URL}/api/user/favorite/create/${user.email}/${data.id}`,
       requestOptions
     )
       .then((response) => response.text())

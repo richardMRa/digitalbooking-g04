@@ -5,7 +5,6 @@ import './styleSelectDate.css'
 const SelectDate = (props) => {
     const [activeDate, setActiveDate] = useState({ current: new Date() })
     return (
-
         <div className='calendar-home'>
             <Calendar className='calendarDouble' onChange={props.onChange} value={props.value ? props.value : null}
                 selectRange={true} /*showDoubleView={window.matchMedia("(max-width: 414px)").matches? false: true}*/

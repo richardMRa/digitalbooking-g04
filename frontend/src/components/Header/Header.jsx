@@ -18,7 +18,6 @@ export default function Header(props) {
 
   useEffect(() => {
     if (props.isUser) {
-      console.log(AuthService.getCurrentUser())
       setUser(AuthService.getCurrentUser());
       if (localStorage.getItem("user")) {
         AuthService.getCurrentUser().roles[0].name === "ROLE_ADMIN"

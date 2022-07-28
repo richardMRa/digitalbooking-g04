@@ -501,6 +501,7 @@ public class UserService implements IUserService {
             return false;
         }else{
             user.setEnabled(true);
+            //user.setRoles(Collections.singleton(iRoleRepository.findByName("ROLE_USER").orElse(null)));
             iUserRepository.save(user);
             return true;
         }

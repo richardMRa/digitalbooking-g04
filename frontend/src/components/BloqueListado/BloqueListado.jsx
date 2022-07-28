@@ -23,7 +23,7 @@ const BloqueListado = (props) => {
 
   const getNodoApi = () => {
     var nodoApi = new URL(
-      "http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/product/findByAll"
+      `${process.env.REACT_APP_BACK_URL}/api/product/findByAll`
     );
     if (pag) {
       nodoApi.searchParams.append("pag", pag);
@@ -53,7 +53,7 @@ const BloqueListado = (props) => {
 
     setCategory(props.categoryType);
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/categories/findAll`
+      `${process.env.REACT_APP_BACK_URL}/api/categories/findAll`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -67,7 +67,7 @@ const BloqueListado = (props) => {
 
       });
     fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/cities/findAll`
+      `${process.env.REACT_APP_BACK_URL}/api/cities/findAll`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -87,7 +87,7 @@ const BloqueListado = (props) => {
   }, [optionsActive])
   const updateFavourites = () => {
     return fetch(
-      `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/user/favorites/${user.email}`
+      `${process.env.REACT_APP_BACK_URL}/api/user/favorites/${user.email}`
     )
       .then((response) => {
         if (!response.ok) throw Error(response.status);
@@ -184,7 +184,7 @@ const BloqueListado = (props) => {
   }
   useEffect(() => {
     clearFilters()
-  
+    console.log(process.env)
     return () => {
       clearFilters()
     }

@@ -96,7 +96,7 @@ public class AuthController {
         if (userRepository.existsByEmail(registerDTO.getEmail())) {
             return new ResponseEntity<>("Fail -> Email is already in use!", HttpStatus.BAD_REQUEST);
         }
-         userService.save(registerDTO);
+        userService.save(registerDTO);
         User user = userRepository.findByEmail(registerDTO.getEmail()).orElseThrow(() -> new ResourceNotFoundException("User", "email", registerDTO.getEmail()));
         String url = System.getenv().get("URL_API_BACKEND");
         userService.sendVerificationEmail(user, url);

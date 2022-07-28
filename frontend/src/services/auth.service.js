@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/auth/";
+const API_URL = `${process.env.REACT_APP_BACK_URL}/api/auth/`;
 
 class AuthService {
 
@@ -11,6 +11,7 @@ class AuthService {
         password
       })
       .then(response => {
+        console.log(response.data)
         if (response.data.jwt) {
           localStorage.setItem("user", JSON.stringify(response.data));
         }

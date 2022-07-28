@@ -63,7 +63,7 @@ const Booking = (props) => {
     if (isFirstRender) {
       if (user) {
         fetch(
-          `http://grupo4bookingdigital-env.eba-gkwgucam.us-east-2.elasticbeanstalk.com/api/product/${idProduct}`
+          `${process.env.REACT_APP_BACK_URL}/api/product/${idProduct}`
         )
           .then((response) => {
             if (!response.ok) throw Error(response.status);

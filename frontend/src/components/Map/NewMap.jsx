@@ -58,7 +58,7 @@ const NewMap = (props) => {
 
   return (
     <LoadScript
-      googleMapsApiKey="AIzaSyAzGgSvnxprQ9cjiXzvaGZijjY0Aa1GWas"
+      googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}
     >
       <GoogleMap
         mapContainerStyle={containerStyle}

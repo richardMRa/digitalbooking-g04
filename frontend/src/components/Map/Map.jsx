@@ -33,7 +33,7 @@ export default function Map(props) {
   }, []);
   
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyAzGgSvnxprQ9cjiXzvaGZijjY0Aa1GWas",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     libraries,
   });
 

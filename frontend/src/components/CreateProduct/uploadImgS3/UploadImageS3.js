@@ -6,11 +6,11 @@ window.Buffer = window.Buffer || require("buffer").Buffer;
 const UploadImageS3 = (props) => {
 
     const config = { 
-        bucketName: process.env.REACT_APP_BUCKET_NAME, 
-        dirName: process.env.REACT_APP_DIR_NAME, /* opcional */
-        region: process.env.REACT_APP_REGION, 
-        accessKeyId: process.env.REACT_APP_ACCESS_ID, 
-        secretAccessKey: process.env.REACT_APP_ACCESS_KEY, 
+            bucketName: process.env.REACT_APP_BUCKET_NAME, 
+            dirName: process.env.REACT_APP_DIR_NAME, /* opcional */
+            region: process.env.REACT_APP_REGION, 
+            accessKeyId: process.env.REACT_APP_ACCESS_ID, 
+            secretAccessKey: process.env.REACT_APP_ACCESS_KEY, 
     };
 
     const [selectedFiles, setSelectedFiles] = useState([]);

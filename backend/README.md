@@ -1,5 +1,5 @@
 # Back-End
-Booking web app Java API 
+Booking Web App Java API 
 ### Technologies used
 - Java
 - Spring & Spring boot

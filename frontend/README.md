@@ -1,12 +1,9 @@
 # Front-End
-
-### Introducción
-
-### Tecnologias
-
-### Esquema
-
-### Ejecución
-
-    - npm install react-app
-    - npm start
+Java Booking API Front End
+### Technologies used
+- HTML
+- CSS
+- JS
+- React.js
+### Unit Tests
+- Jest

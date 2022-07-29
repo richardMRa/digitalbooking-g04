@@ -1,5 +1,5 @@
 # Front-End
-Java Booking API Front End
+Booking web app Front End
 ### Technologies used
 - HTML
 - CSS

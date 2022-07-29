@@ -1,5 +1,5 @@
 # Front-End
-Booking web app Front End
+Booking Web App Front End
 ### Technologies used
 - HTML
 - CSS

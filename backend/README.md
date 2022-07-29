@@ -7,7 +7,7 @@ Booking web app Java API
 - SQL
 ### Unit Tests
 - Mockito
-#### Database connection env variables required
+### Database connection env variables required
 - RDS_USERNAME (db username e.g., 'root') 
 - RDS_PASSWORD (db password e.g., 'root')
 - RDS_HOSTNAME (db hostname e.g., 'localhost')

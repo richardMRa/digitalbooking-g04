@@ -6,7 +6,7 @@ Booking web app Java API
 - Maven
 - SQL
 ### Unit Tests
-- Jest
+- Mockito
 ### database connection env variables required
 - RDS_USERNAME (db username e.g., 'root') 
 - RDS_PASSWORD (db password e.g., 'root')

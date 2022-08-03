@@ -1,5 +1,5 @@
 ## Digital House 1st track Final Project
-Currentyl deployed at http://app-digital-booking.s3-website-us-east-1.amazonaws.com/ <br>
+Currently deployed at http://app-digital-booking.s3-website-us-east-1.amazonaws.com/ <br>
 Maintainer: https://github.com/salosmc
 ### Description
 Basic Booking Web App developed using HTML, CSS, JS, React.js, Java, Spring & Spring Boot, SQL, Gitlab, etc. \
